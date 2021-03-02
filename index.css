@@ -1,0 +1,91 @@
+.background-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+body {
+  margin: 0;
+}
+h1 {
+  z-index: 20;
+  font-size: 60px;
+  color: white;
+}
+
+button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* animation: fadeIn 0.5s ease-in-out; */
+}
+.show {
+  opacity: 0.7;
+}
+.default_settings {
+}
+.clock-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh;
+  margin-bottom: 50px;
+}
+.js-clock {
+  position: relative;
+}
+.js-form {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  left: 13px;
+}
+.js-toDoForm {
+  position: absolute;
+  bottom: -10;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  left: 20px;
+}
+.js-weather {
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  right: 15px;
+}
+.js-toDoList {
+  position: absolute;
+  bottom: -150px;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  left: 20px;
+}
