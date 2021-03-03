@@ -6,7 +6,19 @@ function loadName() {
     if (currentUser === null) { //Ask if "currentUser" is in the localStorage.
         askForName()
     } else {     
-        form.innerText = `Greeting! ${currentUser}` // Maintain the information which saved before.
+        const time = document.querySelector("h1")
+        if (time.innerText[0]+time.innerText[1] > 0) {
+            form.innerText = `Time to Sleep! ${currentUser}` // Maintain the information which saved before.
+        } 
+        if (time.innerText[0]+time.innerText[1] > 6) {
+            form.innerText = `Good morning! ${currentUser}`
+        } 
+        if (time.innerText[0]+time.innerText[1] > 12) {
+            form.innerText = `Good afternoon! ${currentUser}`
+        } 
+        if (time.innerText[0]+time.innerText[1] > 18) {
+            form.innerText = `Good evening! ${currentUser}`
+        }
     }
 }
 function askForName() {
@@ -30,5 +42,6 @@ function saveName(text) {
 
 function init(){
     loadName()
+    setInterval(loadName,60000) //60seconds
 }
 init()

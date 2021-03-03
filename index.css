@@ -14,8 +14,13 @@ body {
   margin: 0;
 }
 h1 {
-  z-index: 20;
   font-size: 80px;
+  color: white;
+  margin-top: 0;
+}
+h2 {
+  margin-bottom: 0;
+  font-size: 40px;
   color: white;
 }
 
@@ -98,6 +103,7 @@ input:hover {
   animation: btnFloat 0.2s ease-in-out forwards;
 }
 h1:hover,
+h2:hover,
 .weather:hover {
   animation: larger 0.2s ease-in-out forwards;
 }
@@ -119,8 +125,13 @@ h1:hover,
   margin-bottom: 5px;
 }
 .list__maxlen {
-  opacity: 0;
+  opacity: 1;
 }
 ul {
   margin: 0;
+}
+.js-toDoList button {
+  visibility: ;
+}
+.button-on {
 }
