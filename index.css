@@ -4,15 +4,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: -1;
+}
+.form {
+  margin-bottom: 20px;
 }
 body {
   margin: 0;
 }
 h1 {
   z-index: 20;
-  font-size: 60px;
+  font-size: 80px;
   color: white;
 }
 
@@ -43,36 +46,21 @@ button {
 .show {
   opacity: 0.7;
 }
-.default_settings {
-}
 .clock-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 80vh;
-  margin-bottom: 50px;
+  text-align: center;
 }
-.js-clock {
-  position: relative;
-}
+
 .js-form {
-  position: absolute;
-  bottom: 0;
   font-size: 30px;
   color: white;
   font-weight: 600;
   left: 13px;
 }
-.js-toDoForm {
-  position: absolute;
-  bottom: -10;
-  font-size: 30px;
-  color: white;
-  font-weight: 600;
-  left: 20px;
-}
-.js-weather {
+
+.weather {
   position: absolute;
   top: 0;
   font-size: 30px;
@@ -80,12 +68,59 @@ button {
   font-weight: 600;
   right: 15px;
 }
-.js-toDoList {
-  position: absolute;
-  bottom: -150px;
-  padding: 0;
+.input__name {
+  width: 230px;
+  height: 50px;
+  font-size: 20px;
+}
+@keyframes btnFloat {
+  0% {
+    box-shadow: 7px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.4);
+  }
+}
+@keyframes larger {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+input {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+input:hover {
+  animation: btnFloat 0.2s ease-in-out forwards;
+}
+h1:hover,
+.weather:hover {
+  animation: larger 0.2s ease-in-out forwards;
+}
+.js-toDoForm input {
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+}
+.list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
   font-size: 20px;
   color: white;
-  font-weight: 600;
-  left: 20px;
+  font-weight: 400;
+}
+.list li {
+  margin-bottom: 5px;
+}
+.list__maxlen {
+  opacity: 0;
+}
+ul {
+  margin: 0;
 }

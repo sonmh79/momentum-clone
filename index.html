@@ -8,19 +8,20 @@
     <body>
         <div class="background-screen"></div>
         <div class="clock-box">
-            <div class="js-clock">
+            <div class="js-clock clock">
                 <h1>00:00</h1>
-                <form class="js-form form">
-                    <input class="input" type="text" placeholder="what is your name?"/>
-                </form>
-                <form class="js-toDoForm">
-                    <input type="text" placeholder="Write a to do" />
-                </form>
-                <ul class="js-toDoList">
-                </ul>
             </div>
+            <form class="js-form form">
+                <input class="input__name" type="text" placeholder="what's your name? ✒"/>
+            </form>
+            <form class="js-toDoForm">
+                <input type="text" placeholder="Add a list to do. 📃" />
+            </form>
+            <ul class="js-toDoList list">
+                <li class="list__maxlen">This is the max width of lst</li>
+            </ul>
         </div>
-        <span class="js-weather"></span>   
+        <span class="js-weather weather"></span>   
         
         <script src="clock.js"></script>
         <script src="greeting.js"></script>

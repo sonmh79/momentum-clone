@@ -1,5 +1,5 @@
 const form = document.querySelector(".form"); //querySelctor -> class(.), form(#), tags ...
-const input = form.querySelector(".input");  // Make variables using father(form)
+const input = form.querySelector(".input__name");  // Make variables using father(form)
 
 function loadName() {
     const currentUser = localStorage.getItem("currentUser") //Get item("currentUser") from localStorage
@@ -10,7 +10,8 @@ function loadName() {
     }
 }
 function askForName() {
-    form.addEventListener("submit",Handle) // addEventListener -> if form "submit" a data, excute Function(Handle)
+    // addEventListener -> if form "submit" a data, excute Function(Handle)
+    form.addEventListener("submit",Handle)   
 }
 function Handle(event) {
     event.preventDefault(); // Prevent default event
