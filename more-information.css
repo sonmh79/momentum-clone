@@ -1,0 +1,22 @@
+.more-information {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  right: 15px;
+  position: absolute;
+  top: 60px;
+}
+.more-information span {
+  margin-bottom: 5px;
+}
+.btn-more {
+  color: white;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}

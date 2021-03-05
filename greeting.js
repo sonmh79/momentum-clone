@@ -7,16 +7,16 @@ function loadName() {
         askForName()
     } else {     
         const time = document.querySelector("h1")
-        if (time.innerText[0]+time.innerText[1] > 0) {
+        if (time.innerText[0]+time.innerText[1] >= 0) {
             form.innerText = `Time to Sleep! ${currentUser}` // Maintain the information which saved before.
         } 
-        if (time.innerText[0]+time.innerText[1] > 6) {
+        if (time.innerText[0]+time.innerText[1] >= 6) {
             form.innerText = `Good morning! ${currentUser}`
         } 
-        if (time.innerText[0]+time.innerText[1] > 12) {
+        if (time.innerText[0]+time.innerText[1] >= 12) {
             form.innerText = `Good afternoon! ${currentUser}`
         } 
-        if (time.innerText[0]+time.innerText[1] > 18) {
+        if (time.innerText[0]+time.innerText[1] >= 18) {
             form.innerText = `Good evening! ${currentUser}`
         }
     }
