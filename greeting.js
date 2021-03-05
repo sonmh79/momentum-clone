@@ -42,6 +42,5 @@ function saveName(text) {
 
 function init(){
     loadName()
-    setInterval(loadName,60000) //60seconds
 }
 init()

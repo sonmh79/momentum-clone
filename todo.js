@@ -35,6 +35,7 @@ function paintToDo(text){
     newId = toDos.length + 1
     span.innerText = text+" "; // Set span's innerText
     // li << button , span
+    li.appendChild(delBtn);
     li.appendChild(span);
     li.id = newId;
     // ui << li
